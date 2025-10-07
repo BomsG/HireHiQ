@@ -73,7 +73,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/"
+                href="/interview"
                 className="bg-gradient-to-r from-[#7F00FF] to-[#7F00FF] hover:from-[#7F00FF] hover:to-[#00FFF7] text-white font-medium px-8 py-3 rounded-md transition-all duration-300 flex items-center justify-center group"
               >
                 Start Interview
