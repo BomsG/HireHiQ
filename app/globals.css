@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@keyframes sound {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-sound {
+  animation: sound 1s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+@keyframes gridMove {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  50% {
+    background-position: 60px 60px, 60px 60px;
+  }
+  100% {
+    background-position: 0 0, 0 0;
+  }
+}
+
+.animate-gridMove {
+  animation: gridMove 8s linear infinite;
+}

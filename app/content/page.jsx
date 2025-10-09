@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { IoMdSearch, IoBookSharp, IoIosVideocam } from "react-icons/io";
+import { IoMdSearch, IoMdBook, IoIosVideocam } from "react-icons/io";
 import {
   FaFileAlt,
   FaTag,
@@ -9,6 +9,7 @@ import {
   FaUser,
 } from "react-icons/fa";
 import Link from "next/link";
+import { IoArrowForward } from "react-icons/io5";
 
 const ContentHub = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -221,7 +222,7 @@ const ContentHub = () => {
                     href="#"
                     className="inline-flex items-center text-[#00FFF7] hover:underline"
                   >
-                    Read Article <ChevronRightIcon size={16} className="ml-1" />
+                    Read Article <FaChevronRight size={16} className="ml-1" />
                   </Link>
                 </div>
                 <div className="md:w-1/2 h-64 md:h-auto">
@@ -292,7 +293,7 @@ const ContentHub = () => {
                       href="#"
                       className="text-[#00FFF7] text-sm flex items-center group-hover:underline"
                     >
-                      Read More <ChevronRightIcon size={16} className="ml-1" />
+                      Read More <IoArrowForward size={16} className="ml-1" />
                     </Link>
                     <div className="flex items-center text-xs text-gray-400">
                       <FaUser size={12} className="mr-1" />
@@ -307,7 +308,7 @@ const ContentHub = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
           {[
             {
-              icon: <IoBookSharp size={24} />,
+              icon: <IoMdBook size={24} />,
               title: "Articles",
               count: 124,
               color: "#7F00FF",

@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} antialiased bg-[#101010] text-white`}
+        className={`${playfair.variable} antialiased bg-[#000214] text-white`}
       >
         <Navbar />
         {children}

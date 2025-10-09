@@ -18,20 +18,20 @@ const InterviewPage = () => {
       <div className="bg-[#101010] text-white min-h-screen">
         {/* Background elements */}
         <div className="fixed inset-0 z-0">
-          <div className="absolute top-1/3 left-1/4 w-96 h-96 rounded-full bg-[#7F00FF]/10 filter blur-[100px]"></div>
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 rounded-full bg-[#06e84e]/10 filter blur-[100px]"></div>
           <div className="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full bg-[#00FFF7]/10 filter blur-[80px]"></div>
           <div className="absolute inset-0 opacity-10">
             <div
               className="h-full w-full"
               style={{
                 backgroundImage:
-                  "radial-gradient(#7F00FF 1px, transparent 1px)",
+                  "radial-gradient(#06e84e 1px, transparent 1px)",
                 backgroundSize: "40px 40px",
               }}
             ></div>
           </div>
         </div>
-        <div className="container mx-auto px-4 md:px-6 pt-20 pb-16 relative z-10">
+        <div className="container mx-auto px-4 md:px-6 pt-20 mt-20 pb-16 relative z-10">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Left panel - AI Interviewer */}
             <div className="lg:w-2/3">
@@ -40,17 +40,17 @@ const InterviewPage = () => {
                 <div className="relative aspect-video w-full bg-[#101010]">
                   {/* AI Visualization */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-48 h-48 rounded-full border-4 border-[#7F00FF] flex items-center justify-center relative">
+                    <div className="w-48 h-48 rounded-full border-4 border-[#06e84e] flex items-center justify-center relative">
                       <div
                         className="absolute inset-0 rounded-full border-t-4 border-[#00FFF7] animate-spin"
                         style={{
                           animationDuration: "3s",
                         }}
                       ></div>
-                      <div className="w-40 h-40 rounded-full bg-gradient-to-br from-[#7F00FF]/30 to-[#00FFF7]/30 flex items-center justify-center">
+                      <div className="w-40 h-40 rounded-full bg-gradient-to-br from-[#06e84e]/30 to-[#00FFF7]/30 flex items-center justify-center">
                         <div className="text-center">
-                          <div className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#7F00FF] to-[#00FFF7]">
-                            QUANTUM AI
+                          <div className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#06e84e] to-[#00FFF7]">
+                            HireHiQ AI
                           </div>
                           <div className="text-xs text-[#00FFF7] mt-2 animate-pulse">
                             {isRecording ? "Listening..." : "Ready"}
@@ -66,7 +66,7 @@ const InterviewPage = () => {
                     }).map((_, i) => (
                       <div
                         key={i}
-                        className="w-1 bg-gradient-to-t from-[#7F00FF] to-[#00FFF7]"
+                        className="w-1 bg-gradient-to-t from-[#06e84e] to-[#00FFF7]"
                         style={{
                           height: isRecording
                             ? `${Math.random() * 100}%`
@@ -95,7 +95,7 @@ const InterviewPage = () => {
                       </span>
                       <div className="w-32 h-1 bg-white/10 rounded-full overflow-hidden">
                         <div
-                          className="h-full bg-gradient-to-r from-[#7F00FF] to-[#00FFF7]"
+                          className="h-full bg-gradient-to-r from-[#06e84e] to-[#00FFF7]"
                           style={{
                             width: `${currentQuestion * 10}%`,
                           }}
@@ -105,8 +105,8 @@ const InterviewPage = () => {
                   </div>
                   <div className="mb-8">
                     <div className="flex items-start mb-4">
-                      <div className="w-8 h-8 rounded-full bg-[#7F00FF]/20 flex items-center justify-center mr-4 mt-1">
-                        <span className="text-[#7F00FF]">Q</span>
+                      <div className="w-8 h-8 rounded-full bg-[#06e84e]/20 flex items-center justify-center mr-4 mt-1">
+                        <span className="text-[#06e84e]">Q</span>
                       </div>
                       <div>
                         <h3 className="font-medium text-lg">
@@ -132,7 +132,7 @@ const InterviewPage = () => {
                           className={`w-10 h-10 rounded-full flex items-center justify-center ${
                             isRecording
                               ? "bg-red-500/20 text-red-500"
-                              : "bg-[#7F00FF]/20 text-[#7F00FF] hover:bg-[#7F00FF]/30"
+                              : "bg-[#06e84e]/20 text-[#06e84e] hover:bg-[#06e84e]/30"
                           } transition-colors`}
                         >
                           {isRecording ? (
@@ -147,7 +147,7 @@ const InterviewPage = () => {
                           </button>
                         )}
                       </div>
-                      <button className="bg-gradient-to-r from-[#7F00FF] to-[#00FFF7] text-white px-4 py-2 rounded-md flex items-center">
+                      <button className="bg-gradient-to-r from-[#06e84e] to-[#00FFF7] text-white px-4 py-2 rounded-md flex items-center">
                         <IoMdSend size={16} className="mr-2" />
                         Submit Answer
                       </button>
@@ -169,7 +169,7 @@ const InterviewPage = () => {
                       <button className="bg-white/5 hover:bg-white/10 text-white px-3 py-1 rounded text-sm">
                         Previous
                       </button>
-                      <button className="bg-[#7F00FF] hover:bg-[#7F00FF]/80 text-white px-4 py-1 rounded text-sm">
+                      <button className="bg-[#06e84e] hover:bg-[#06e84e]/80 text-white px-4 py-1 rounded text-sm">
                         Next Question
                       </button>
                     </div>
@@ -202,7 +202,7 @@ const InterviewPage = () => {
                               key={index}
                               className={`px-3 py-1 rounded text-sm ${
                                 index === 1
-                                  ? "bg-[#7F00FF] text-white"
+                                  ? "bg-[#06e84e] text-white"
                                   : "bg-white/5 text-gray-400 hover:bg-white/10"
                               }`}
                             >
@@ -229,7 +229,7 @@ const InterviewPage = () => {
                             <input
                               type="checkbox"
                               id={`area-${index}`}
-                              className="w-4 h-4 rounded border-white/20 bg-white/5 text-[#7F00FF] focus:ring-[#7F00FF]"
+                              className="w-4 h-4 rounded border-white/20 bg-white/5 text-[#06e84e] focus:ring-[#06e84e]"
                               defaultChecked={[0, 1, 3].includes(index)}
                             />
                             <label
@@ -246,7 +246,7 @@ const InterviewPage = () => {
                       <label className="block text-sm font-medium text-gray-400 mb-2">
                         AI Feedback Level
                       </label>
-                      <select className="w-full bg-[#101010] border border-white/10 rounded py-2 px-3 text-white focus:outline-none focus:ring-1 focus:ring-[#7F00FF] focus:border-[#7F00FF]">
+                      <select className="w-full bg-[#101010] border border-white/10 rounded py-2 px-3 text-white focus:outline-none focus:ring-1 focus:ring-[#06e84e] focus:border-[#06e84e]">
                         <option>Detailed (Technical + Communication)</option>
                         <option>Technical Focus</option>
                         <option>Communication Focus</option>
@@ -254,7 +254,7 @@ const InterviewPage = () => {
                       </select>
                     </div>
                     <div className="pt-4 border-t border-white/10">
-                      <button className="w-full bg-gradient-to-r from-[#7F00FF] to-[#00FFF7] text-white py-2 rounded-md">
+                      <button className="w-full bg-gradient-to-r from-[#06e84e] to-[#00FFF7] text-white py-2 rounded-md">
                         Apply Settings
                       </button>
                     </div>
@@ -267,7 +267,7 @@ const InterviewPage = () => {
                       </h3>
                       <div className="grid grid-cols-2 gap-4">
                         <div className="bg-[#101010] border border-white/10 rounded-lg p-4 text-center">
-                          <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7F00FF] to-[#00FFF7]">
+                          <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#06e84e] to-[#00FFF7]">
                             82%
                           </div>
                           <p className="text-xs text-gray-400 mt-1">
@@ -312,7 +312,7 @@ const InterviewPage = () => {
                             </div>
                             <div className="h-1.5 bg-white/5 rounded-full overflow-hidden">
                               <div
-                                className="h-full bg-gradient-to-r from-[#7F00FF] to-[#00FFF7]"
+                                className="h-full bg-gradient-to-r from-[#06e84e] to-[#00FFF7]"
                                 style={{
                                   width: `${skill.score}%`,
                                 }}
@@ -341,7 +341,7 @@ const InterviewPage = () => {
                             </span>
                           </li>
                           <li className="flex items-start">
-                            <div className="w-1.5 h-1.5 rounded-full bg-[#7F00FF] mt-1.5 mr-2"></div>
+                            <div className="w-1.5 h-1.5 rounded-full bg-[#06e84e] mt-1.5 mr-2"></div>
                             <span className="text-gray-300">
                               Consider adding more examples when explaining
                               concepts
